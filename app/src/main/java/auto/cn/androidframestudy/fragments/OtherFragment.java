@@ -6,7 +6,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
-import auto.cn.androidframestudy.base.BaseFragment;
+import auto.cn.androidframestudy.okhttp_atguigu.BaseFragment;
 
 public class OtherFragment extends BaseFragment {
     private TextView tv;

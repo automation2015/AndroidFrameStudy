@@ -1,23 +1,22 @@
 package auto.cn.androidframestudy.fragments;
 
-import android.os.Bundle;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import auto.cn.androidframestudy.R;
-import auto.cn.androidframestudy.base.BaseFragment;
+import auto.cn.androidframestudy.okhttp_atguigu.BaseFragment;
+import auto.cn.androidframestudy.okhttp_atguigu.AtyOkHttp;
+import auto.cn.androidframestudy.okhttp_imooc.AtyImoocOkhttp;
 import auto.cn.androidframestudy.utils.CommonBaseAdapter;
 import auto.cn.androidframestudy.utils.ViewHolder;
 import butterknife.Bind;
-import butterknife.ButterKnife;
 
 public class CommonFrameFragment extends BaseFragment {
     private static final String TAG = CommonFrameFragment.class.getName();
@@ -38,7 +37,7 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架页面");
         mDatas=new ArrayList<>();
-        datas = new String[]{"OKHttp", "xUtils3", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "volley", "Gson", "FastJson", "picasso", "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
+        datas = new String[]{"OKHttp", "OKHttp_Imooc","xUtils3", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "volley", "Gson", "FastJson", "picasso", "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
         for(int i=0;i<datas.length;i++){
             mDatas.add(datas[i]);
         }
@@ -52,7 +51,12 @@ public class CommonFrameFragment extends BaseFragment {
         lvCommonFrame.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(mContext,"data=="+mDatas.get(position),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext,"data=="+mDatas.get(position),Toast.LENGTH_SHORT).show();
+          if(mDatas.get(position).toLowerCase().equals("okhttp")){
+              startActivity(new Intent(mContext,AtyOkHttp.class));
+          }else if(mDatas.get(position).toLowerCase().equals("okhttp_imooc")){
+              startActivity(new Intent(mContext,AtyImoocOkhttp.class));
+          }
             }
         });
     }

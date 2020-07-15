@@ -1,6 +1,5 @@
-package auto.cn.androidframestudy.base;
+package auto.cn.androidframestudy.okhttp_atguigu;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;

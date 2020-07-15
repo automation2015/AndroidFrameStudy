@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".okhttp_atguigu.AtyOkHttp">
+    <include layout="@layout/title_bar"/>
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get请求"/>
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="post请求"/>
+
+    <Button
+        android:id="@+id/btn_get_utils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhtt_utils的get请求"/>
+    <Button
+        android:id="@+id/btn_post_utils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhtt_utils的post请求"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_result"
+        android:text="显示请求数据"/>
+    <Button
+        android:id="@+id/btn_download_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhtt_utils的下载大文件"/>
+
+    <Button
+        android:id="@+id/btn_upload_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhtt_utils的上传多文件"/>
+
+    <Button
+        android:id="@+id/btn_get_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhtt_utils请求单张图片"/>
+    <Button
+        android:id="@+id/btn_get_image_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用okhtt_utils请求图片列表"/>
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

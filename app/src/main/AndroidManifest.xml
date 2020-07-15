@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="auto.cn.androidframestudy">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--android:configChanges="orientation|screenSize|keyboardHidden"
-        用于解决横竖屏切换导致的生命周期重建问题，横屏时控件重叠-->
-        <activity android:name=".MainActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden">
-        </activity>
+
+        <!--
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        用于解决横竖屏切换导致的生命周期重建问题，横屏时控件重叠
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity android:name=".Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".okhttp_atguigu.AtyOkHttp" />
+        <activity android:name=".okhttp_atguigu.AtyOkHttpList" />
+        <activity android:name=".okhttp_imooc.AtyImoocOkhttp">
 
         </activity>
     </application>

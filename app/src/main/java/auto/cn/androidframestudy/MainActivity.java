@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import auto.cn.androidframestudy.base.BaseFragment;
+import auto.cn.androidframestudy.okhttp_atguigu.BaseFragment;
 import auto.cn.androidframestudy.fragments.CommonFrameFragment;
 import auto.cn.androidframestudy.fragments.CustomFragment;
 import auto.cn.androidframestudy.fragments.OtherFragment;

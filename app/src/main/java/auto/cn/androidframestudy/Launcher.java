@@ -28,5 +28,6 @@ public class Launcher extends Activity {
 
             }
         },2000);
+        finish();
     }
 }
