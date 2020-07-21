@@ -20,19 +20,18 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".Launcher">
-
-        </activity>
+        <activity android:name=".Launcher"></activity>
         <activity android:name=".okhttp_atguigu.AtyOkHttp" />
         <activity android:name=".okhttp_atguigu.AtyOkHttpList" />
-        <activity android:name=".okhttp_imooc.AtyImoocOkhttp"></activity>
+        <activity android:name=".okhttp_imooc.AtyImoocOkhttp" />
         <activity android:name=".dropdownmenu_imooc.AtyImoocDownPullMenu">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".dropdownmenu_imooc.AtyPlanCheck"></activity>
     </application>
 
 </manifest>
