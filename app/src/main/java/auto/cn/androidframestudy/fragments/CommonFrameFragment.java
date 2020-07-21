@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import auto.cn.androidframestudy.R;
+import auto.cn.androidframestudy.dropdownmenu_imooc.AtyImoocDownPullMenu;
 import auto.cn.androidframestudy.okhttp_atguigu.BaseFragment;
 import auto.cn.androidframestudy.okhttp_atguigu.AtyOkHttp;
 import auto.cn.androidframestudy.okhttp_imooc.AtyImoocOkhttp;
@@ -37,7 +38,7 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG, "常用框架页面");
         mDatas=new ArrayList<>();
-        datas = new String[]{"OKHttp", "OKHttp_Imooc","xUtils3", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "volley", "Gson", "FastJson", "picasso", "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
+        datas = new String[]{"OKHttp", "OKHttp_Imooc","dropDownMenu_Imooc","xUtils3", "Retrofit2", "Fresco", "Glide", "greenDao", "RxJava", "volley", "Gson", "FastJson", "picasso", "evenBus", "jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
         for(int i=0;i<datas.length;i++){
             mDatas.add(datas[i]);
         }
@@ -56,6 +57,8 @@ public class CommonFrameFragment extends BaseFragment {
               startActivity(new Intent(mContext,AtyOkHttp.class));
           }else if(mDatas.get(position).toLowerCase().equals("okhttp_imooc")){
               startActivity(new Intent(mContext,AtyImoocOkhttp.class));
+          }else if(mDatas.get(position).toLowerCase().equals("dropdownmenu_imooc")){
+              startActivity(new Intent(mContext,AtyImoocDownPullMenu.class));
           }
             }
         });

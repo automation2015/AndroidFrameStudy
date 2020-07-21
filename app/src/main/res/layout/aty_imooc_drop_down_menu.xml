@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<auto.cn.androidframestudy.dropdownmenu_imooc.DropDownMemu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dropDownMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dividerColor="@color/gray"
+    app:maskColor="@color/mask_color"
+    app:menuBackgroundColor="@color/white"
+    app:menuSelectedIcon="@drawable/iv_icon_down"
+    app:menuTextSize="14sp"
+    app:menuUnSelectedIcon="@drawable/iv_icon_up"
+    app:textSelectdColor="@color/drop_down_selected"
+    app:textUnSelectdColor="@color/drop_down_unselected"
+    app:underlineColor="@color/gray">
+    <!--app:menuSelectedIcon="@drop_down_selected_icon"
+        app:menuUnSelectedIcon="@drop_down_unselected_icon"-->
+</auto.cn.androidframestudy.dropdownmenu_imooc.DropDownMemu>
